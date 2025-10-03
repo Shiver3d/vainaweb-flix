@@ -1,11 +1,15 @@
 header {
   background-color: rgba(210, 156, 255, 0.493);
+  box-shadow: 0 4px 15px rgba(210, 156, 255, 0.548);
   position: relative;
   text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 h1 {
   color: rgb(255, 255, 255);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.205);
 }
 
 * {
@@ -24,10 +28,10 @@ main {
 }
 
 main div {
-  box-shadow: 0 4px 15px rgb(65, 0, 117);
+  box-shadow: 0 4px rgba(64, 0, 117, 0.534);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background: rgba(78, 6, 141, 0.3568627451);
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
   text-align: center;
   flex-basis: 450px;
@@ -42,6 +46,7 @@ main div {
 
 main div:hover {
   transform: scale(101%);
+  background: rgba(112, 32, 182, 0.3568627451);
 }
 
 body::before {
@@ -55,11 +60,18 @@ body::before {
   z-index: -1;
 }
 
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 img {
   width: 100%;
   height: 80%;
   max-height: 750px;
-  border-radius: 1%;
+  border-radius: 13%;
   display: inline-block;
   align-self: center;
   min-width: 250px;
@@ -102,4 +114,11 @@ button {
 button:hover {
   background-position: right center;
   transform: scale(1.05);
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  justify-self: center;
+  margin: 20px;
 }/*# sourceMappingURL=style.css.map */
